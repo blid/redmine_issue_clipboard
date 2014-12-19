@@ -1,0 +1,11 @@
+<script>
+  window.issueclipboard = {
+      reference_keyword: '<%= Setting.commit_ref_keywords.split(',').first || refs %>'
+  };
+</script>
+
+<% content_for :header_tags do %>
+  <%= javascript_include_tag 'zeroclipboard.js', plugin: 'redmine_issue_clipboard'  %>
+  <%= javascript_include_tag 'issueclipboard.js', plugin: 'redmine_issue_clipboard'  %>
+  <%= stylesheet_link_tag 'issueclipboard.css', plugin: 'redmine_issue_clipboard' %>
+<% end %>
