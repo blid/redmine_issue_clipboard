@@ -1,3 +1,3 @@
-# English strings go here for Rails i18n
 en:
-  # my_label: "My label"
+  issue_clipboard_hover_info: "Copy commit message to clipboard"
+  issue_clipboard_copied_info: "Copied to clipboard"

@@ -1,6 +1,8 @@
 <script>
-  window.issueclipboard = {
-      reference_keyword: '<%= Setting.commit_ref_keywords.split(',').first || refs %>'
+  window.issue_clipboard = {
+      reference_keyword: '<%= Setting.commit_ref_keywords.split(',').first || refs %>',
+      hover_info: '<%= I18n.t('issue_clipboard_hover_info') %>',
+      copied_info: '<%= I18n.t('issue_clipboard_copied_info') %>'
   };
 </script>
 

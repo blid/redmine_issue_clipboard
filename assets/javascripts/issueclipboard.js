@@ -5,12 +5,12 @@
         var $header = $('#content > h2').first(),
             $title = $('.subject h3').first(),
             issue_id = $header.text().split(" ").slice(-1)[0],
-            referencing_keyword = global.issueclipboard.reference_keyword,
+            referencing_keyword = global.issue_clipboard.reference_keyword,
             text = $title.text() + "\n" + referencing_keyword + " "+issue_id,
             hover_info = "Copy commit message to clipboard",
             copied_info = "Copied to clipboard",
             button =  '<a class="icon icon-copy hint--right issue-copy-button" ' +
-                'data-hint="' + hover_info + '"' +
+                'data-hint="' + global.issue_clipboard.hover_info + '"' +
                 ' data-clipboard-text="'+text+'"></a>';
 
         var $button = $(button).appendTo($header);
@@ -23,13 +23,13 @@
         }, function() {
             $button.removeClass('hint--always');
             setTimeout(function() { // after transition for tooltips ends
-                $button.attr('data-hint', hover_info);
+                $button.attr('data-hint', global.issue_clipboard.hover_info);
             }, 200);
         });
 
         client.on( "ready", function( readyEvent ) {
             client.on( "aftercopy", function( event ) {
-                $button.attr('data-hint', copied_info).addClass('hint--always');
+                $button.attr('data-hint', global.issue_clipboard.copied_info).addClass('hint--always');
 
 
 

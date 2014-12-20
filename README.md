@@ -34,5 +34,3 @@ I'll be happy to accept pull requests.
 ### Development ideas
 * tests, including browser based
 * configuration: template for content & selectable keyword
-* translations
-
