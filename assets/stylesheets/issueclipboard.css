@@ -189,6 +189,7 @@
     transform: translateX(8px); }
 
 .issue-copy-button {
+    cursor: pointer;
     width: 16px;
     height: 16px;
     padding-left: 0px;
