@@ -29,7 +29,7 @@ I'll be happy to accept pull requests.
 
 ### Resources used
 
-* Excellent [zeroclipboard](https://github.com/zeroclipboard/zeroclipboard) library
+* Excellent [clipboard](https://github.com/zenorocha/clipboard.js) library
 
 ### Development ideas
 * tests, including browser based
